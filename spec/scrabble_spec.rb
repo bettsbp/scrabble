@@ -30,7 +30,11 @@ end
 
 describe("#Number") do
   it("returns a word corresponding to the number") do
-    number = Number.new(1)
+    number = Number.new("1")
     expect(number.to_words()).to(eq("one"))
+  end
+  it("returns a word corresponding to the number") do
+    number = Number.new("9")
+    expect(number.to_words()).to(eq("nine"))
   end
 end

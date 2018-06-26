@@ -21,11 +21,16 @@ class Number
     @number = number
   end
   def to_words()
-    ones = {1 => 'one'}
-    final_number = ones.fetch(@number)
+    ones = {'0' => '', '1' => 'one', '2' => 'two', '3' => 'three', '4' => 'four', '5' => 'five', '6' => 'six', '7' => 'seven', '8' => 'eight', '9' => 'nine'}
+    # teens = {}
     # tens = {}
     # hundreds = {}
     # thousands = {}
-    final_number
+    split_number = @number.split("")
+    split_number.each do |array_item|
+      @final_number = ones.fetch(array_item)
+      puts @final_number
+      end
+    @final_number
   end
 end
