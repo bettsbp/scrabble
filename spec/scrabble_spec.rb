@@ -4,14 +4,18 @@ require('scrabble')
 describe("#Word") do
   it("returns a scrabble score for a letter") do
     word = Word.new("a")
-    expect(word.letter()).to(eq(1))
+    expect(word.determine_score()).to(eq(1))
   end
   it("returns a scrabble score for a letter") do
     word = Word.new("b")
-    expect(word.letter()).to(eq(3))
+    expect(word.determine_score()).to(eq(3))
   end
   it("returns a scrabble score for a letter") do
     word = Word.new("z")
-    expect(word.letter()).to(eq(10))
+    expect(word.determine_score()).to(eq(10))
+  end
+  it("returns a scrabble score for a letter") do
+    word = Word.new("cat")
+    expect(word.determine_score()).to(eq(5))
   end
 end
