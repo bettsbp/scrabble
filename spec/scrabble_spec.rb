@@ -37,4 +37,8 @@ describe("#Number") do
     number = Number.new("9")
     expect(number.to_words()).to(eq("nine"))
   end
+  it("returns a word corresponding to the number") do
+    number = Number.new("14")
+    expect(number.to_words()).to(eq("fourteen"))
+  end
 end
