@@ -18,4 +18,12 @@ describe("#Word") do
     word = Word.new("cat")
     expect(word.determine_score()).to(eq(5))
   end
+  it("returns a scrabble score for a letter") do
+    word = Word.new("dog")
+    expect(word.determine_score()).to(eq(5))
+  end
+  it("returns a scrabble score for a letter") do
+    word = Word.new("cat dog")
+    expect(word.determine_score()).to(eq(10))
+  end
 end
