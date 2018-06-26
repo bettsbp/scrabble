@@ -8,20 +8,3 @@ class Word
     letters.fetch(@letter)
   end
 end
-
-# class Word(word)
-#
-#   def initialize()
-#
-#
-#   # def scrabble(word)
-#   #   letters = Hash.new
-#   #
-#   # end
-# end
-
-
-
-# score = Hash.new(word)
-# score.store("a", 1)
-# score.store("b", 3)

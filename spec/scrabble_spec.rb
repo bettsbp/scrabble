@@ -7,7 +7,11 @@ describe("#Word") do
     expect(word.letter()).to(eq(1))
   end
   it("returns a scrabble score for a letter") do
-    word = Word.new("c")
+    word = Word.new("b")
     expect(word.letter()).to(eq(3))
+  end
+  it("returns a scrabble score for a letter") do
+    word = Word.new("z")
+    expect(word.letter()).to(eq(10))
   end
 end
