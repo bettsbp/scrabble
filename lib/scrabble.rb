@@ -23,11 +23,10 @@ class Number
   def to_words()
     ones = {'0' => '', '1' => 'one', '2' => 'two', '3' => 'three', '4' => 'four', '5' => 'five', '6' => 'six', '7' => 'seven', '8' => 'eight', '9' => 'nine'}
     teens = {'10' => 'ten', '11' => 'eleven', '12' => 'twelve', '13' => 'thirteen', '14' => 'fourteen', '15' => 'fifteen', '16' => 'sixteen', '17' => 'seventeen', '18' => 'eighteen', '19' => 'nineteen'}
-    # tens = {}
-    # hundreds = {}
-    # thousands = {}
+
     split_number = @number.split("")
-      if (split_number[1] == 1)
+    puts split_number
+      if (split_number == 2)
         split_number.each do |array_item|
           @final_number = teens.fetch(array_item)
         end
