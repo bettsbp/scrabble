@@ -1,5 +1,3 @@
-
-
 class Word
   def initialize(word)
     @word = word
@@ -14,5 +12,20 @@ class Word
       total_score += letters.fetch(array_item)
     end
     total_score
+  end
+end
+
+
+class Number
+  def initialize(number)
+    @number = number
+  end
+  def to_words()
+    ones = {1 => 'one'}
+    final_number = ones.fetch(@number)
+    # tens = {}
+    # hundreds = {}
+    # thousands = {}
+    final_number
   end
 end
